@@ -265,6 +265,7 @@ body {
 }
 
 .main-container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     margin-top: var(--header-height);
@@ -551,11 +552,14 @@ body {
     padding: 2rem 1rem 1rem;
     margin-top: auto;
     border-top: 1px solid rgba(255,255,255,0.1);
+    width: 100%;
 }
 
 .footer__container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 /* Основная строка */
@@ -716,6 +720,7 @@ body {
     }
     
     .main-container {
+        width: 100%;
         flex-direction: column;
     }
 }
@@ -751,6 +756,7 @@ body {
     }
     
     .main-container {
+        width: 100%;
         padding: 1rem;
         flex-direction: column;
     }
@@ -849,6 +855,7 @@ body {
     }
     
     .main-container {
+        width: 100%;
         padding: 1rem;
         flex-direction: column;
     }
