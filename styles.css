@@ -303,6 +303,10 @@ body {
     padding-bottom: 0.5rem;
 }
 
+.sidebar__content {
+    /* Контейнер для содержимого сайдбара */
+}
+
 .sidebar__nav {
     list-style: none;
     margin-bottom: 2rem;
