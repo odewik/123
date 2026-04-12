@@ -522,6 +522,9 @@ body {
     border: 1px solid var(--border-color);
     padding: 1rem;
     text-align: left;
+    min-width: 150px;
+    white-space: normal;
+    word-wrap: break-word;
 }
 
 .comparison-table th {
@@ -636,6 +639,7 @@ body {
     align-items: center;
     gap: 0.5rem;
     font-size: 0.85rem;
+    flex-wrap: wrap;
 }
 
 .footer__link {
@@ -765,15 +769,48 @@ body {
         font-size: 1.5rem;
     }
     
-    .footer__links {
+    /* Адаптивность футера на мобильных */
+    .footer__main {
         flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    
+    .footer__brand {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .footer__contacts {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    
+    .footer__bottom {
+        flex-direction: column;
+        align-items: flex-start;
         gap: 1rem;
     }
     
+    .footer__links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    /* Адаптивность таблицы сравнения */
     .comparison-table {
         display: block;
         overflow-x: auto;
-        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        font-size: 0.9rem;
+    }
+    
+    .comparison-table th,
+    .comparison-table td {
+        padding: 0.75rem;
+        min-width: 120px;
     }
 }
 
@@ -830,15 +867,48 @@ body {
         font-size: 1.5rem;
     }
     
-    .footer__links {
+    /* Адаптивность футера на планшетах */
+    .footer__main {
         flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    
+    .footer__brand {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .footer__contacts {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    
+    .footer__bottom {
+        flex-direction: column;
+        align-items: flex-start;
         gap: 1rem;
     }
     
+    .footer__links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    /* Адаптивность таблицы сравнения */
     .comparison-table {
         display: block;
         overflow-x: auto;
-        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        font-size: 0.85rem;
+    }
+    
+    .comparison-table th,
+    .comparison-table td {
+        padding: 0.5rem;
+        min-width: 100px;
     }
 }
 
@@ -867,16 +937,48 @@ body {
         flex-wrap: wrap;
     }
     
+    /* Адаптивность футера на очень маленьких экранах */
+    .footer__main {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    
+    .footer__brand {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .footer__contacts {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    
+    .footer__bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .footer__links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    /* Адаптивность таблицы сравнения */
     .comparison-table {
-        font-size: 0.9rem;
         display: block;
         overflow-x: auto;
-        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        font-size: 0.8rem;
     }
     
     .comparison-table th,
     .comparison-table td {
-        padding: 0.5rem;
+        padding: 0.4rem;
+        min-width: 90px;
     }
 }
 
