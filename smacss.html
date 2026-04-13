@@ -108,15 +108,35 @@
     </header>
     <div class="main-container">
         <aside class="sidebar">
-            <h2 class="sidebar__title">Навигация</h2>
-            <ul class="sidebar__nav">
-                <li class="sidebar__nav-item"><a href="index.html" class="sidebar__nav-link">Главная</a></li>
-                <li class="sidebar__nav-item"><a href="bem.html" class="sidebar__nav-link">БЭМ</a></li>
-                <li class="sidebar__nav-item"><a href="oocss.html" class="sidebar__nav-link">OOCSS</a></li>
-                <li class="sidebar__nav-item"><a href="smacss.html" class="sidebar__nav-link">SMACSS</a></li>
-                <li class="sidebar__nav-item"><a href="comparison.html" class="sidebar__nav-link">Сравнение</a></li>
-                <li class="sidebar__nav-item"><a href="examples.html" class="sidebar__nav-link">Примеры</a></li>
-                <li class="sidebar__nav-item"><a href="resources.html" class="sidebar__nav-link">Ресурсы</a></li>
+            <div class="sidebar__content">
+                <h3 class="sidebar__title">Навигация</h3>
+                <ul class="sidebar__menu">
+                    <li><a href="#smacss-intro">Введение</a></li>
+                    <li><a href="#smacss-categories">Категории</a></li>
+                    <li><a href="#smacss-examples">Примеры</a></li>
+                </ul>
+                
+                <div class="sidebar__subscribe">
+                    <h4>Подписка</h4>
+                    <form class="subscribe-form">
+                        <input type="email" id="email" placeholder="Email" required>
+                        <button type="submit" class="sidebar__button">OK</button>
+                    </form>
+                </div>
+            </div>
+        </aside>
+
+        <main class="content">
+            <h1 id="smacss-intro">Методология SMACSS</h1>
+            <p>SMACSS (Scalable and Modular Architecture for CSS) — это методология, разработанная Джонатаном Сниффером, которая фокусируется на масштабируемости и модульности.</p>
+            
+            <h2 id="smacss-categories">Пять категорий правил</h2>
+            <ul>
+                <li><strong>Base</strong> — базовые стили</li>
+                <li><strong>Layout</strong> — макет страницы</li>
+                <li><strong>Module</strong> — независимые модули</li>
+                <li><strong>State</strong> — состояния элементов</li>
+                <li><strong>Theme</strong> — темы оформления</li>
             </ul>
         </aside>
         <main class="main">
